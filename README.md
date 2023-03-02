@@ -25,15 +25,15 @@ int main(int argc, char** argv){
 }
 EOF
 ```
-Задание №4
+## Задание №4
 ```
 git add hello_world.cpp
 ```
-Задание №5
+## Задание №5
 ```
 git commit -m "Add hello_world.cpp"
 ```
-Задание №6
+## Задание №6
 Отредактировано в Visual Studio Code
 ```
 #include <iostream>
@@ -47,87 +47,87 @@ int main(int argc, char** argv){
     cout << "Hello world from " << name << endl;
 
 ```
-Задание №7
+## Задание №7
 ```
 git commit -m "Changed hello_world.cpp"
 ```
-Задание №8
+## Задание №8
 ```
 git push
 ```
-Задание №9
+## Задание №9
 ```
 История коммитов доступна в удалёном репозитории
 ```
 
-## Part II
-Задание №1
+# Part II
+## Задание №1
 ```
 git checkout -b patch1
 ```
-Задание №2
+## Задание №2
+Отредактировано в Visual Studio Code
 ```
-edit "Hello_world.cpp"
 #include <iostream>
 #include <string>
  
 int main(int argc, char** argv){
- string name;
- std::cin >> name;
- std::cout << "Hello world from " << name << std::endl;
+    string name;
+    std::cin >> name;
+    std::cout << "Hello world from " << name << std::endl;
 }
 ```
-Задание №3
+## Задание №3
 ```
-git commit -a -m "Fixed cpp file"
-git push -u origin patch1
+git commit -m "Fixed"
+git push --set-upstream origin patch1
 ```
-Задание №4
+## Задание №4
 ```
 Ветка patch1 доступна в удалённом репозитории
 ```
-Задание №5
+## Задание №5
 ```
-Создадим pull-request patch1 -> master
+Создадим pull-request patch1 -> main
 ```
-Задание №6
+## Задание №6
+Отредактировано в Visual Studio Code
 ```
-edit "Hello_world.cpp"
 #include <iostream>
 #include <string>
  
 int main(int argc, char** argv){
- string name; // User name
- std::cin >> name; // Input user name
- std::cout << "Hello world from " << name << std::endl;
+    string name; // User name
+    std::cin >> name; // Input user name
+    std::cout << "Hello world from " << name << std::endl;
 } 
 ```
-Задание №7
+## Задание №7
 ```
-git commit -a -m "Added comments"
-git push -u origin patch1
+git commit -m "Add comments"
+git push --set-upstream origin patch1
 ```
-Задание №8
+## Задание №8
 ```
 Новые изменения есть в созданном на шаге 5 pull-request
 ```
-Задание №9
+## Задание №9
 ```
  В удалённом репозитории выполняем слияние PR patch1 -> master и удаляем ветку patch1 в удаленном репозитории.
 ```
-Задание №10
+## Задание №10
 ```
-git pull origin
+git pull
 ```
-Задание №11
+## Задание №11
 ```
 git log
 ```
-Задание №12
+## Задание №12
 ```
 git branch -D patch1
 ```
-## Part III
+# Part III
 Задание №1
 ```
 git checkout -b patch2
