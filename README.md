@@ -1,5 +1,4 @@
 # TIMP_Lab02
-# TIMP_Lab02
 
 # Part I
 
