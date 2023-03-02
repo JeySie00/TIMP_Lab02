@@ -11,8 +11,7 @@ https://github.com/JeySie00/TIMP_Lab02
 git clone https://github.com/JeySie00/TIMP_Lab02
 git add README.md
 git commit -m "Create README.md"
-git remote add origin https://github.com/JeySie00/TIMP_Lab02
-git push -u origin main
+git push
 ```
 ## Задание №3
 ```
