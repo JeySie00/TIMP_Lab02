@@ -124,7 +124,7 @@ git log
 ```
 ## Задание №12
 ```
-git branch -D patch1
+git branch -d patch1
 ```
 # Part III
 Задание №1
@@ -137,8 +137,8 @@ clang-format -i -style=Mozilla "Hello_world.cpp"
 ```
 Задание №3
 ```
-git commit -a -m "Changed code style in cpp file"
-git push -u origin patch2
+git commit -m "Changed code style"
+git push --set-upstream patch2
 ```
 Задание №4
 ```
@@ -148,9 +148,9 @@ git push -u origin patch2
 #include <string>
  
 int main(int argc, char** argv){
- string name; // User n.
- std::cin >> name; // Ввод данных
- std::cout << "Hello world from " << name << std::endl;
+    string name; // Имя пользователя
+    std::cin >> name; // Ввод имени пользователя
+    std::cout << "Hello world from " << name << std::endl; //Печать "Hello world from (имя польвователя)"
 }  
 ```
 Задание №5
@@ -159,15 +159,14 @@ int main(int argc, char** argv){
 ```
 Задание №6
 ```
-git pull origin master
-git rebase master
-edit "Hello_world.cpp"
-git commit -a -m "Update Hello world.cpp"
-git rebase --continue
+git checkout main
+git pull
+git rebase
+git commit -m "Update Hello world.cpp"
 ```
 Задание №7
 ```
-git push -f origin patch2
+git push --set-upstream patch2
 ```
 Задание №8
 ```
@@ -175,5 +174,5 @@ git push -f origin patch2
 ```
 Задание №9
 ```
-Выполняем merge pull-request patch2 -> master
+Выполняем merge pull-request patch2 -> main
 ```
