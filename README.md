@@ -127,20 +127,20 @@ git log
 git branch -d patch1
 ```
 # Part III
-Задание №1
+## Задание №1
 ```
 git checkout -b patch2
 ```
-Задание №2
+## Задание №2
 ```
 clang-format -i -style=Mozilla "Hello_world.cpp"
 ```
-Задание №3
+## Задание №3
 ```
 git commit -m "Changed code style"
 git push --set-upstream patch2
 ```
-Задание №4
+## Задание №4
 ```
 В ветке master в удаленном репозитории изменяем комментарии
 
@@ -153,26 +153,26 @@ int main(int argc, char** argv){
     std::cout << "Hello world from " << name << std::endl; //Печать "Hello world from (имя польвователя)"
 }  
 ```
-Задание №5
+## Задание №5
 ```
 Убеждаемся, что в pull-request появились конфликтны.
 ```
-Задание №6
+## Задание №6
 ```
 git checkout main
 git pull
 git rebase
 git commit -m "Update Hello world.cpp"
 ```
-Задание №7
+## Задание №7
 ```
 git push --set-upstream patch2
 ```
-Задание №8
+## Задание №8
 ```
 Убеждаемся, что в pull-request пропали конфликтны.
 ```
-Задание №9
+## Задание №9
 ```
 Выполняем merge pull-request patch2 -> main
 ```
